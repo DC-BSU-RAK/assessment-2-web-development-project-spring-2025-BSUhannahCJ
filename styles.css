@@ -1,0 +1,622 @@
+/* google font import for h1 */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* google font import for nav bar */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* google font import for general text */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/* Main heading customization */
+h1 {
+  font-size: 40px;
+  /* font size */
+  color: #BBD4C2;
+  /* text color */
+  font-family: "Bebas Neue", sans-serif;
+  /* text font */
+  font-weight: 100;
+  /* font thickness */
+  font-style: italic;
+  /* makes font italic */
+  text-shadow: 1px 1.5px hsla(0, 0%, 11%, 0.462);
+  /* adds shadow to text */
+  margin-top: 0%;
+  /* removes any space from the top */
+}
+
+/* main heading div customization */
+.main_heading {
+  padding: 10px 25px;
+  /* the space around the heading and nav bar */
+  display: flex;
+  /* flex box layout */
+  align-items: center;
+  /*aligns items in center  */
+  justify-content: space-between;
+  /* adds space between items like the heading and nav bar  */
+}
+
+
+
+
+/* nav bar div's anchor tags customization */
+.nav_bar a {
+  color: #95b59e;
+  /* font color */
+  font-family: "Roboto Condensed", sans-serif;
+  /*text font  */
+  font-weight: 500;
+  /*text thickness  */
+  text-decoration: none;
+  /*removes underline  */
+  margin-left: 15px;
+  /*adds 15 pixels of space to the left side of each anchor tag  */
+}
+
+/* nav bar text hover customization */
+.nav_bar a:hover {
+  color: #4d815c;
+  /* changes it into a darker color */
+}
+
+
+
+
+/* about us parent div customization */
+.about_us {
+  background: linear-gradient(#F1B0B7, #e58d95);
+  /*background gradient color  */
+  padding: 40px;
+  /*space of div*/
+}
+
+/* about us box customization */
+.aboutus_box {
+  border-radius: 10px;
+  /*rounds the corners  */
+  overflow: hidden;
+  /* clips anything that goes beyond the borders so you can see the rounded edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.248);
+  /* shadow */
+  max-width: 1000px;
+  /* box's width limit */
+  margin: auto;
+  /*sets the box in the middles*/
+  display: flex;
+  /* flex display layout */
+}
+
+/* about us text customization  */
+.aboutus_text {
+  font-family: "Libre Franklin", sans-serif;
+  /*text font  */
+  color: rgb(38, 40, 38);
+  /* text color */
+  text-align: justify;
+  /* text alignment  */
+  background-color: white;
+  /* background color  */
+  padding: 40px;
+  /* adds space around text*/
+  flex: 1;
+  /*makes elements share space equally  */
+}
+
+/* about us box image div customization */
+.aboutus_images {
+  height: auto;
+  /*height on auto meanining it'll adjust to whatever settings of the div that it's in  */
+  position: relative;
+  /* so the images wont take up the whole screen/div */
+  flex: 1;
+  /*makes elements share space equally   */
+}
+
+/* images in the about us image div customization */
+.aboutus_images img {
+  width: 100%;
+  /*width at 100% */
+  height: 100%;
+  /* height at 100% */
+  object-fit: cover;
+  /* scales image to cover it's  */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+}
+
+/* javascript: adds delay to transition effect so website doesn't immeidietely render it */
+.aboutus_images img.startfade {
+  opacity: 1;
+}
+
+
+.aboutus_images .fade {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+}
+
+.aboutus_images .fade.startfade {
+  opacity: 1;
+  /* fades image in */
+  z-index: 1;
+  /* places the images on top of one another */
+}
+
+
+
+
+/* agenda and guide main div customization */
+.agenda_guide {
+  font-family: "Libre Franklin", sans-serif;
+  /* text font */
+  padding-bottom: 20px;
+  /*space at the bottom of the div  */
+  display: flex;
+  /* flex display layout  */
+  gap: 20px;
+  /* space between nested elements */
+  justify-content: center;
+  /*aligns elements inside this div horizonally in the center  */
+}
+
+/*the green square boxes customization  */
+.ANG_box {
+  color: rgb(38, 40, 38);
+  /* text color */
+  font-family: "Libre Franklin", sans-serif;
+  /*  text font*/
+  background: linear-gradient(#BBD4C2, #92caa2);
+  /*background gradient color  */
+  cursor: pointer;
+  /*  changes cursor to pointer when hovered over element*/
+  border-radius: 10px;
+  /* rounds the corners */
+  padding: 20px;
+  /*space inside the boes  */
+  width: 200px;
+  /* fixed width of boxes */
+  height: 200px;
+  /* fixed height of boxes */
+  transition: transform 0.5s, box-shadow 0.5s;
+  /* animation hover effect  */
+  overflow: hidden;
+  /*hides whatever goes outside the box's borders  */
+}
+
+/* box hover animation */
+.ANG_box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*box heading customization  */
+.ANG_box h3 {
+  margin-top: 0;
+  /* removes space from top margin */
+
+}
+
+/* box ul customization */
+.ANG_box ul {
+  padding-left: 20px;
+
+}
+
+/*header for agenda and guide customization  */
+#ANG {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+  color: #759FA4;
+}
+
+
+
+
+/* message from the creator div customization */
+.msg {
+  color: white;
+  /* text color */
+  background: linear-gradient(#F1B0B7, #e58d95);
+  /*background gradient color  */
+  font-family: "Libre Franklin", sans-serif;
+  /* text font */
+  text-align: justify;
+  /* text alignment */
+  padding-left: 50px;
+  /* paddinf to the left */
+  padding-right: 50px;
+  /* padding to the right  */
+  padding: 40px;
+  /* padding in general */
+}
+
+/* message from the creator header customization  */
+#msgmsg {
+  color: #759FA4;
+  text-align: center;
+}
+
+
+
+
+/* button customization */
+button {
+  color: white;
+  /* text color */
+  font-size: large;
+  /* dont size */
+  background-color: #BBD4C2;
+  /* backgrouncolor */
+  border: none;
+  /* removes border outline */
+  border-radius: 3px;
+  /* rounds corners */
+  transition: 0.3s;
+  /* transition when hovered  */
+  padding: 30px;
+  /*spacing in button  */
+
+}
+
+/* button when hovered customization */
+button:hover {
+  background-color: #95b59e;
+  /* background color */
+  color: #fff;
+  /*text color  */
+  box-shadow: 0 0 0 3px #4d815c;
+  /* shadow for button when hovered */
+  cursor: pointer;
+  /*  cursor changes to pointer when hovered over button*/
+  padding: 30px;
+}
+
+/*button div customization  */
+.button {
+  justify-content: center;
+  /*aligns the button in the center horizontally  */
+  display: flex;
+  /* flex display layout*/
+  align-items: center;
+  /* aligns items in the center */
+  padding-top: 30px;
+}
+
+
+
+
+/*introduction div customization  */
+.introduction {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Libre Franklin", sans-serif;
+  background: linear-gradient(#F1B0B7, #f78792);
+  /*background gradient color  */
+  padding: 100px 20px;
+  clip-path: ellipse(75% 100% at 50% 100%);
+  /* clips the background color to make it an ellipse */
+}
+
+/* introduction header customization */
+#intro {
+  color: #759FA4;
+  font-size: 45px;
+}
+
+
+
+
+/* different kinds of diets div customization (mainly the header area)*/
+.diets {
+  background: url('4morefood.jpg') no-repeat center center/cover;
+  /* image as background */
+  height: 250px;
+  /* height placement for image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* specifically the header of the div customization */
+#h2diets {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 35px;
+  color: #759FA4;
+  -webkit-text-stroke: 1px #00651d;
+}
+
+
+/* different kinds of diets section customization */
+.diffkinds {
+  font-family: "Libre Franklin", sans-serif;
+  background-color: white;
+  text-align: center;
+  padding: 30px 20px;
+  gap: 20px;
+  /* space between elements  */
+  display: grid;
+  /* grid display layout */
+}
+
+/* the boxes in the section customization */
+.dietbox {
+  text-align: left;
+  background: linear-gradient(#BBD4C2, #92caa2);
+  color: #292929;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* header in the diet boxes customization */
+.dietbox h3 {
+  color: #759FA4;
+  text-align: left;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* diet boxes anchor tag customization */
+.dietbox a {
+  color: #272464;
+}
+
+
+
+
+
+/* application recommendation main div customization */
+.app_div {
+  font-family: "Libre Franklin", sans-serif;
+  gap: 20px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*app boxes customization  */
+.apps {
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.345);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+/*app boxes images customization  */
+.apps img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Removes the tiny gap below the image */
+}
+
+/*app boxes images when hovered customization  */
+.apps:hover img {
+  transform: scale(1.1);
+}
+
+/* information of the app in the boxes customization */
+.appsinfo {
+  background: #BBD4C2;
+  padding: 15px;
+}
+
+
+
+
+/* introduction customization for fitness and execrise */
+.introduction2 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Libre Franklin", sans-serif;
+  background: linear-gradient(#BBD4C2, #95b59e);
+  /*background gradient color  */
+  clip-path: ellipse(75% 100% at 50% 100%);
+  padding: 100px 20px;
+}
+
+/* introduction customization for personal hygiene */
+.introduction3 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Libre Franklin", sans-serif;
+  background: linear-gradient(#759FA4, #578a8f);
+  /*background gradient color  */
+  clip-path: ellipse(75% 100% at 50% 100%);
+  padding: 100px 20px;
+}
+
+
+
+
+
+
+/* keyframe animation */
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+/*exercise blocks main div customization  */
+.view {
+  display: grid;
+  /* grid display layout */
+  gap: 30px;
+  /* space between boxes */
+  grid-template-columns: repeat(2, 1fr);
+  /* makes it have two columns */
+  padding-bottom: 20px;
+}
+
+
+/* exercise blocks customization */
+.exerciseblock {
+  font-family: "Libre Franklin", sans-serif;
+  animation: appear linear;
+  /*animation being used here  */
+  animation-timeline: view();
+  /* this ensures the animation happens only when the element is on screen/visible*/
+  animation-range: entry 0%;
+  /* makes the animation happen as soon as the element enters the viewport */
+  background-color: #BBD4C2;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.386);
+  padding: 20px;
+  border-radius: 7px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* exercise block heading customization  */
+.exerciseblock h2 {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+/* exercise block image customization */
+.exerciseblock img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* little block of color at the end */
+.colorpink {
+  background-color: #F1B0B7;
+  padding: 30px;
+}
+
+
+
+
+/*header for 'recommended products'  */
+#producth2 {
+  color: #95b59e;
+  font-family: "Libre Franklin", sans-serif;
+  padding: 50px;
+  text-align: center;
+  background-color: #578a8f;
+}
+
+/*main div for recommended products section/page customization  */
+.products {
+  gap: 40px;
+  font-family: "Libre Franklin", sans-serif;
+  background-color: #578a8f;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px;
+}
+
+/* images of the products div customization */
+.products img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  height: auto;
+}
+
+/* product info's paragraph text customization */
+.product_info p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/*product info div customization  */
+.product_info {
+  max-width: 400px;
+}
+
+/* product info div h2 customization */
+.product_info h2 {
+  margin-bottom: 15px;
+  font-size: 29px;
+  color: #95b59e;
+}
+
+
+
+/* background image for contact us page */
+.background {
+  background: url('15background.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px;
+}
+
+/* contact us main div customization */
+.contactus {
+  font-family: "Libre Franklin", sans-serif;
+  background-color: white;
+  max-width: 500px;
+  border-radius: 10px;
+  margin: 50px auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.338);
+  padding: 50px;
+}
+
+/* contact us box header customization */
+#contacth2 {
+  color: #578a8f;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* contact us form customization */
+.contactus form {
+  display: flex;
+  gap: 19px;
+  flex-direction: column;
+}
+
+
+/* contact us box input and text area customization */
+.contactus input,
+.contactus textarea {
+  padding: 13px 16px;
+  font-size: 18px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #c3c2c2;
+  transition: border 5s ease;
+}
+
+/* contac us box button customization */
+.contactus button {
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #759FA4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 5s ease;
+}
+
+/* color when you hover over button */
+.contactus button:hover {
+  background-color: #679296;
+}
